@@ -1,12 +1,13 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
 }
 
 header {
@@ -17,6 +18,16 @@ header {
 header h1 {
     margin: 0;
     padding: 10px 0;
+}
+
+.title {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    padding: 15px 20px; /* Increase padding */
+
 }
 
 nav ul {
@@ -35,15 +46,20 @@ nav ul li a {
 }
 
 #hero {
-    background-image: url('hero-bg.jpg'); /* Replace with your image */
+    background-image: url('https://img.freepik.com/free-photo/photorealistic-portrait-non-traditional-family-structure_23-2151295257.jpg'); /* Replace with your image */
     background-size: cover;
-    color: #fff;
+    background-position: center;
+    height: 100vh; /* Ensure the hero section covers the entire viewport height */
     text-align: center;
-    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero h2 {
     margin-bottom: 20px;
+    font-size: large;
 }
 
 .btn {
@@ -64,4 +80,99 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+/* Styles for the "About" dropdown */
+.about-dropdown {
+    position: relative;
+}
+.about-dropdown .dropbtn {
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #333; /* Background color for the dropdown button */
+}
+
+.about-dropdown .dropbtn:hover, 
+.about-dropdown .dropbtn:focus {
+    background-color: #555; /* Darker background color on hover/focus */
+}
+
+.about-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown content below the button */
+    left: 0; /* Ensure it aligns with the left edge of the button */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.about-dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.about-dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.about-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.about-dropdown:hover .dropbtn {
+    background-color: #555; /* Darker background color when dropdown is active */
+}
+/* Styles for the "Volunteers" dropdown */
+.volunteers-dropdown {
+    position: relative;
+}
+
+.volunteers-dropdown .dropbtn {
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #333; /* Background color for the dropdown button */
+}
+
+.volunteers-dropdown .dropbtn:hover, 
+.volunteers-dropdown .dropbtn:focus {
+    background-color: #555; /* Darker background color on hover/focus */
+}
+
+.volunteers-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown content below the button */
+    left: 0; /* Ensure it aligns with the left edge of the button */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.volunteers-dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.volunteers-dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.volunteers-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.volunteers-dropdown:hover .dropbtn {
+    background-color: #555; /* Darker background color when dropdown is active */
 }
